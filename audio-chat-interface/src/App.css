@@ -1,0 +1,29 @@
+/* App.css */
+
+/* Apply some basic styling to the entire app */
+.App {
+  text-align: center;
+}
+
+/* Styling for the main header/title of the app */
+.header {
+  background-color: #007bff; /* Blue color, adjust as needed */
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+}
+
+/* Add styles for the main content area */
+.content {
+  margin: 20px;
+}
+
+/* Styling for the footer or any other global elements */
+.footer {
+  background-color: #f0f0f0; /* Light gray color, adjust as needed */
+  padding: 10px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,70 @@
+/* audiocomp.css */
+
+/* Styling for the container of the recording and submission component */
+.audiocomp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Styling for the audio recording button */
+.record-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styling for the stop recording button */
+.stop-button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Styling for the submit button (triangle symbol) */
+.submit-button {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #28a745; /* Green color, adjust as needed */
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Styling for the recording status or message */
+.status-message {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Styling for the audio player (if needed) */
+.audio-player {
+  margin-top: 10px;
+}
+
+/* Styling for the audio submit button */
+.audio-submit-button {
+  background-color: #28a745; /* Green color, adjust as needed */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Styling for the audio submit button when disabled */
+.audio-submit-button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+  

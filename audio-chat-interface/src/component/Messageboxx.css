@@ -1,0 +1,58 @@
+/* messageboxx.css */
+
+/* Styling for the message box container */
+.message-box-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Adjust the maximum width as needed */
+  margin: 20px auto; /* Center the message box */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual message items (question and answer) */
+.message-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+/* Styling for the question message */
+.question-message {
+  background-color: #f0f0f0; /* Light gray, adjust as needed */
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 70%; /* Adjust as needed */
+  word-wrap: break-word;
+}
+
+/* Styling for the answer message */
+.answer-message {
+  background-color: #007bff; /* Blue color, adjust as needed */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 70%; /* Adjust as needed */
+  word-wrap: break-word;
+}
+
+/* Styling for the audio player (if needed) */
+.audio-player {
+  margin-top: 5px;
+}
+
+/* Styling for the scrollbar (if needed) */
+.message-box-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-box-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.message-box-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}

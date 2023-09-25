@@ -1,0 +1,26 @@
+/* exitt.css */
+
+/* Styling for the exit button container */
+.exit-button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999; /* Adjust the z-index as needed */
+}
+
+/* Styling for the exit button */
+.exit-button {
+  background-color: #dc3545; /* Red color, adjust as needed */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover state for the exit button */
+.exit-button:hover {
+  background-color: #c82333; /* Darker red color on hover, adjust as needed */
+}

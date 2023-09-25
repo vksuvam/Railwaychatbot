@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railways bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 70px; /* Move the title towards the center */
+        }
+
+        .language-selection {
+            margin-top: 30px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .submit-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+        .submit-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Indian Railways!</h1>
+
+    <p>Please choose your preferred language:</p>
+
+    <div class="language-selection">
+        <select id="languageSelect">
+            <option value="english">English</option>
+            <option value="marathi">मराठी</option>
+            <option value="hindi">हिंदी</option>
+        </select>
+    </div>
+
+    <div class="spacing"></div>
+    
+    <button class="submit-button" id="submitButton">Submit</button>
+
+    <script>
+        const languageSelect = document.getElementById('languageSelect');
+        const submitButton = document.getElementById('submitButton');
+
+        // Function to send selected language to the Flask backend
+        function sendLanguageToBackend() {
+            const selectedLanguage = languageSelect.value;
+
+            // Create a new XMLHttpRequest
+            const xhr = new XMLHttpRequest();
+
+            // Define the request method and URL
+            xhr.open('POST', 'http://localhost:5000/set_language', true);
+
+            // Set the request header
+            xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+
+            // Define the data to be sent as JSON
+            const data = JSON.stringify({ language: selectedLanguage });
+
+            // Define the callback function when the request is complete
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // Language sent successfully
+                        // Redirect to the desired page
+                        window.location.href = 'http://localhost:3000';
+                    } else {
+                        // Handle any errors here
+                        console.error('Error sending language data to the backend.');
+                    }
+                }
+            };
+
+            // Send the request with the JSON data
+            xhr.send(data);
+        }
+
+        // Event listener for the submit button
+        submitButton.addEventListener('click', function () {
+            sendLanguageToBackend();
+        });
+    </script>
+</body>
+</html>
