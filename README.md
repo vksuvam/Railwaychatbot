@@ -3,9 +3,11 @@ In this project, we are creating a conversational chat bot where the user commun
 
 <h3>WorkFlow</h3>
 
-![Copy of Subjective answer evaluation using NLP](https://github.com/vksuvam/Railwaychatbot/assets/73656357/47e0a9c6-d4b3-45bf-b26c-6c84b0816362)
+![Copy of Subjective answer evaluation using NLP](https://github.com/vksuvam/Railwaychatbot/assets/73656357/9c5d3118-552e-431d-a18d-45928fa13eb4)
+
 
 Tools/Models Used: Whisper (OpenAI), LangChain, M2M100, Text2Speech model
 
 <h3>Architecture</h3>
-![Copy of Subjective answer evaluation using NLP (1)](https://github.com/vksuvam/Railwaychatbot/assets/73656357/11b36b9d-46e6-44d8-b25d-4e2e0c15850e)
+
+![Copy of Subjective answer evaluation using NLP (1)](https://github.com/vksuvam/Railwaychatbot/assets/73656357/c6da2335-e4b2-45a1-af50-73408f7e3e03)
